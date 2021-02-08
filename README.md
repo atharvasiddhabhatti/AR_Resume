@@ -1,7 +1,7 @@
 AR Resume App Based on React native and ViroMedia ViroReact
 
-**Instructions for running Project:-
-**1. Follow directions on our Quick start guide to setup dependencies for trying these sample projects with the Viro Media App.
+**Instructions for running Project:-**
+1. Follow directions on our Quick start guide to setup dependencies for trying these sample projects with the Viro Media App.
 1. Clone the repo into your workspace with git: git clone 
 1. Go into the code-samples directory.
 1. Run npm install from the root of this project.
