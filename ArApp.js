@@ -13,20 +13,14 @@ import {
 
 var createReactClass = require('create-react-class');
 var apiKey = "YOUR_API_KEY_HERE";
-var vrScenes = {
-    '360PhotoTour': require('./js/360PhotoTour/MainScene'),
-}
-
 var arScenes = {
   'BusinessCard' : require('./js/ARBusinessCard/BusinessCard.js'),
 }
 
-var showARScene = true;
+
 
 var ViroCodeSamplesSceneNavigator = createReactClass({
-  render: function() {
-
-    if (showARScene) {
+  render() {
       return (
         <ViroARSceneNavigator
           initialScene={{
@@ -36,16 +30,7 @@ var ViroCodeSamplesSceneNavigator = createReactClass({
           autofocus={true}
           />
         );
-    } else {
-      return (
-        <ViroVRSceneNavigator
-          initialScene={{
-            scene: vrScenes['360PhotoTour'],
-          }}
-          apiKey={apiKey} />
-      );
-
-    }
+    } 
   }
-});
+);
 module.exports = ViroCodeSamplesSceneNavigator;

@@ -139,6 +139,32 @@ export class BusinessCard extends Component {
             <ViroNode
               opacity={0} position={[-80, 0, 0]}
               animation={{
+                name:'google',
+                run: this.state.runAnimation
+                }}
+            >
+              <ViroFlexView
+                  rotation={[-90, 0, 0]}
+                  height={0.03}
+                  width={0.05}
+                  style={styles.card}
+              >
+                <ViroFlexView
+                >
+                  
+                  <ViroAnimatedImage
+                    height={0.05}
+                    width={0.10}
+                    loop={true}
+                    onClick={()=>{Linking.openURL('https://drive.google.com/file/d/1hRqlXFpFSP1OlJMaQ-7oCHomnKizxFGH/view?usp=sharing')}}
+                    source={require('./res/google-cloud.gif')}
+                  />
+                </ViroFlexView>
+              </ViroFlexView>
+            </ViroNode>
+            <ViroNode
+              opacity={0} position={[-80, 0, 0]}
+              animation={{
                 name:'website',
                 run: this.state.runAnimation
                 }}
@@ -340,6 +366,15 @@ ViroAnimations.registerAnimations({
     properties:{
       positionX: -0.18,
       positionZ: 0.04,
+      opacity: 1.0
+    },
+      easing:"Bounce",
+      duration: 500
+  },
+  google:{
+    properties:{
+      positionX: -0.18,
+      positionZ: 0.10,
       opacity: 1.0
     },
       easing:"Bounce",

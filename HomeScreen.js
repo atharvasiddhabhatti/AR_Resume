@@ -9,15 +9,20 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.logo}>Welcome To My AR Resume Experince </Text>
-        <Text style={styles.forgot}>Instruction:- Download the resume from the below download button and print it on a A4 size paper. </Text>
+        <Text style={styles.forgot}>Instruction:- Download the resume from the below download button and print it on a A4 size paper. Scan the complete page. </Text>
         <TouchableOpacity style={styles.loginBtn}
         onPress={() => this.props.navigation.navigate('ARScreen')}>
           <Text style={styles.loginText}>SCAN RESUME</Text>
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={ ()=>{ Linking.openURL('https://drive.google.com/file/d/1KGrPUe37PpI2swFMeeksRLWk2ZDdKALh/view?usp=sharing')}}
+        onPress={ ()=>{ Linking.openURL('https://drive.google.com/file/d/1VAqI7FtDQu2a_w4y7Rt5j-Mi60xBrcnO/view?usp=sharing')}}
         style={styles.loginBtn}>
           <Text style={styles.loginText}>DOWNLOAD RESUME</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+        onPress={ ()=>{ Linking.openURL('https://github.com/atharvasiddhabhatti/AR_Resume')}}
+        style={styles.loginBtn}>
+          <Text style={styles.loginText}>APP SOURCE CODE</Text>
         </TouchableOpacity>
 
       </View>
