@@ -13,7 +13,7 @@ export PATH=$ANDROID_HOME/tools:$PATH
 Build and launch android app by executing the following from the root of the project
 react-native run-android --variant=gvrDebug
 
-**To generate APK:- **
+**To generate APK:-**
 
 To build android release tests:
 $ cd test/android
@@ -21,6 +21,7 @@ $ ./gradlew assembleGvrRelease
 Install app-gvr-release.apk from test/android/app/build/output/gvr/app-gvr-release.apk onto your plugged in Android device.
 
 Screenshoots:-
+
 ![Screenshoot1](https://lh5.googleusercontent.com/5LQIbeXsFT6gNDTDC1ovmyeygdID4Nfjrs-TeRAzxU2LSXnng4lspYE8HjJwwIvDRK-b8zttyuSiYWSuJklv=w967-h902-rw "Screenshoot1")
 
 ![Screenshoot2](https://lh4.googleusercontent.com/l3WvRwAMqgAXfuPi7FVNlQrWnbHUSreiiCx8tzIeQPxmNBV0xYY4LGy04gwJXG5J6REFVsMYMSL4pj9uivAe=w967-h902-rw "Screenshoot2")
